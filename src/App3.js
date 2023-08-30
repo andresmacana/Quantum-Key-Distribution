@@ -41,16 +41,16 @@ const BB84Form = () => {
       ) {
         if (
           (aliceSends[index] === "arrow_up" &&
-            bobMeasures[index] === "arrow_northeast") ||
+            bobMeasures[index] === "arrow_up") ||
           (aliceSends[index] === "arrow_northeast" &&
-            bobMeasures[index] === "arrow_up")
+            bobMeasures[index] === "arrow_northeast")
         ) {
           return "0";
         } else if (
           (aliceSends[index] === "arrow_right" &&
-            bobMeasures[index] === "arrow_southeast") ||
+            bobMeasures[index] === "arrow_right") ||
           (aliceSends[index] === "arrow_southeast" &&
-            bobMeasures[index] === "arrow_right")
+            bobMeasures[index] === "arrow_southeast")
         ) {
           return "1";
         }
